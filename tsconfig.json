@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "noEmit": true,
+    "noFallthroughCasesInSwitch": true,
+    // "paths": {
+    //   "@src/*": ["src/*"],
+    // },
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules"
+      }
+    ],
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "es5",
+  },
+  "include": [
+    "src/**/*",
+    "typings/**/*",
+    "config/**/*",
+    ".eslintrc.js",
+    ".stylelintrc.js",
+    ".prettierrc.js"
+  ],
+  "exclude": [
+    "node_modules",
+    "build",
+    "dist"
+  ]
+}
