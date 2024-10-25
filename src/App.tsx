@@ -1,9 +1,17 @@
 import React from 'react';
-import './App.css';
+import { generate, presetPalettes } from '@ant-design/colors';
+import Button, { ButtonType, ButtonSize } from './components/Button/Button';
 function App() {
+  console.table(presetPalettes);
   return (
     <div className="App">
-      111
+      <Button>Hello</Button>
+      <Button btnType={ButtonType.Primary}>Hello</Button>
+      <Button size={ButtonSize.Large}>Hello</Button>
+      <Button disabled>Hello</Button>
+      <Button btnType={ButtonType.Link} href='https://www.baidu.com' disabled>
+        Hello
+      </Button>
     </div>
   );
 }
